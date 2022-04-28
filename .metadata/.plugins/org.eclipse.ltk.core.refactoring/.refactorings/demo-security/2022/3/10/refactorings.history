@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;SecurityConfiguration.java&apos; to &apos;demo-security/src/main/java/com.example.demo&apos;&#x0D;&#x0A;- Original project: &apos;demo-security&apos;&#x0D;&#x0A;- Destination element: &apos;demo-security/src/main/java/com.example.demo&apos;&#x0D;&#x0A;- Original element: &apos;com.example.demo.securityconfig.SecurityConfiguration.java&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update fully qualified names in &apos;*&apos; files" description="Move compilation unit" destination="/src\/main\/java&lt;com.example.demo" element1="/src\/main\/java&lt;com.example.demo.securityconfig{SecurityConfiguration.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="true" references="true" stamp="1646149579057" units="1" version="1.0"/>
+</session>

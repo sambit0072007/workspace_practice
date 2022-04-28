@@ -1,0 +1,27 @@
+package com.java.practice.collectionsexample;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class PracticeSetsAndMaps {
+
+	
+	Map<Integer, Object> myMap= new HashMap<>();
+	
+	public void example() {
+		myMap.put(101, "Spring Tools Suite");
+		myMap.put(102, Arrays.asList("one","two","three"));
+		
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

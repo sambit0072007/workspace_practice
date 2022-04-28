@@ -1,0 +1,10 @@
+server:
+  port: 2233
+spring:
+  cloud:
+    gateway:
+      routes:      - id: service-a
+        uri: http://localhost:8081/
+        predicates:        - Path=/first/**
+                   
+      

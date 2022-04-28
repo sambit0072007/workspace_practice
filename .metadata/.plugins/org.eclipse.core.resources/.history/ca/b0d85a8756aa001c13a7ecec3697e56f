@@ -1,0 +1,9 @@
+server:
+  port: 4000
+spring:
+  cloud:
+    gateway:
+      routes:      - id: cloud-service-a
+        uri: http://localhost:8081
+        predicates:        - Path=/first/**    discovery:      enabled: true                   
+      

@@ -1,0 +1,13 @@
+server:  port: 2222
+
+
+#spring:
+#  cloud:
+#    service-registry:#      auto-registration:#        enabled: true#    gateway:#      routes:#      - id: truck
+#        uri: http://localhost:7020/
+#        predicates:#        - Path = /truck/**
+#      - id: freight
+#        uri: http://localhost:8020/
+#        predicates:
+#        - Path = /freight/**
+#                  

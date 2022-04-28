@@ -1,0 +1,42 @@
+server:
+  port: 2222
+eureka:
+  client:
+    enabled: true
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    
+
+spring:
+  cloud:
+    service-registry:
+      auto-registration:
+        enabled: true
+    
+    gateway:
+      enabled: true
+      #discovery:
+        #locator:
+          #enabled: true
+          #lower-case-service-id: false
+      routes:
+      - id: SERVICE-FREIGHT-PVT #service-freight-pvt
+        uri:
+          #lb://SERVICE-FREIGHT-PVT ,
+          http://localhost:8020/
+        predicates:
+        - Path=/freight/**
+        
+      - id: SERVICE-TRUCK #service-truck
+        uri:
+             #lb://SERVICE-TRUCK
+             http://localhost:7020/
+        predicates:
+         - Path=/truck/**
+       
+  main:
+    web-application-type: reactive
+  application:
+    name: service-gateway

@@ -1,0 +1,12 @@
+spring:
+ application:    name: shopper-world datasource:    url: jdbc:mysql://localhost:3306/springjdbc
+    username: root
+    password: root
+
+    
+server:  port: 7080
+  
+management:  endpoints:    web:      exposure:        include: "*"           endpoint:    health:      show-details: ALWAYS
+      
+      
+      

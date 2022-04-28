@@ -1,0 +1,242 @@
+Microsoft Windows [Version 10.0.19042.1466]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\workspace_practice\store-inventory>mvn jasypt:encrypt -Djasypt.encryptor.password=sambit007 -Djasyspt.plugin.value=root
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.demo:store-inventory >----------------------
+[INFO] Building store-inventory 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- jasypt-maven-plugin:3.0.4:encrypt (default-cli) @ store-inventory ---
+[INFO] Starting MavenCli v3.8.2 using Java 1.8.0_161 on DESKTOP-VFNKBIF with PID 15500 (D:\apache-maven-3.8.2-bin\apache-maven-3.8.2\lib\maven-embedder-3.8.2.jar started by ADMIN in D:\workspace_practice\store-inventory)
+[INFO] The following profiles are active: dev
+[INFO] Post-processing PropertySource instances
+[INFO] Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+[INFO] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[INFO] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application-dev.yml]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application.properties]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Started MavenCli in 0.891 seconds (JVM running for 2.526)
+[INFO] Active Profiles: dev
+[INFO] Encrypting file src\main\resources\application.properties
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.741 s
+[INFO] Finished at: 2022-02-09T00:27:16+05:30
+[INFO] ------------------------------------------------------------------------
+
+D:\workspace_practice\store-inventory>mvn jasypt:encrypt-value -Djasypt.encryptor.password=sambit007 -Djasyspt.plugin.value=root
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.demo:store-inventory >----------------------
+[INFO] Building store-inventory 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- jasypt-maven-plugin:3.0.4:encrypt-value (default-cli) @ store-inventory ---
+[INFO] Starting MavenCli v3.8.2 using Java 1.8.0_161 on DESKTOP-VFNKBIF with PID 20612 (D:\apache-maven-3.8.2-bin\apache-maven-3.8.2\lib\maven-embedder-3.8.2.jar started by ADMIN in D:\workspace_practice\store-inventory)
+[INFO] The following profiles are active: dev
+[INFO] Post-processing PropertySource instances
+[INFO] Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+[INFO] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[INFO] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application-dev.yml]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application.properties]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Started MavenCli in 0.826 seconds (JVM running for 3.92)
+[INFO] Active Profiles: dev
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.851 s
+[INFO] Finished at: 2022-02-09T00:27:51+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.github.ulisesbocchio:jasypt-maven-plugin:3.0.4:encrypt-value (default-cli) on project store-inventory: No jasypt.plugin.value property provided -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+D:\workspace_practice\store-inventory>
+D:\workspace_practice\store-inventory>mvn jasypt:encrypt-value -Djasypt.encryptor.password=sambit007 -Djasyspt.plugin.value=root
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.demo:store-inventory >----------------------
+[INFO] Building store-inventory 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- jasypt-maven-plugin:3.0.4:encrypt-value (default-cli) @ store-inventory ---
+[INFO] Starting MavenCli v3.8.2 using Java 1.8.0_161 on DESKTOP-VFNKBIF with PID 22760 (D:\apache-maven-3.8.2-bin\apache-maven-3.8.2\lib\maven-embedder-3.8.2.jar started by ADMIN in D:\workspace_practice\store-inventory)
+[INFO] The following profiles are active: dev
+[INFO] Post-processing PropertySource instances
+[INFO] Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+[INFO] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[INFO] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application-dev.yml]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application.properties]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Started MavenCli in 0.842 seconds (JVM running for 2.429)
+[INFO] Active Profiles: dev
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.479 s
+[INFO] Finished at: 2022-02-09T00:27:58+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.github.ulisesbocchio:jasypt-maven-plugin:3.0.4:encrypt-value (default-cli) on project store-inventory: No jasypt.plugin.value property provided -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+D:\workspace_practice\store-inventory>mvn jasypt:encrypt-value -Djasypt.encryptor.password=sambit007 -Djasypt.plugin.value=root
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.demo:store-inventory >----------------------
+[INFO] Building store-inventory 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- jasypt-maven-plugin:3.0.4:encrypt-value (default-cli) @ store-inventory ---
+[INFO] Starting MavenCli v3.8.2 using Java 1.8.0_161 on DESKTOP-VFNKBIF with PID 20836 (D:\apache-maven-3.8.2-bin\apache-maven-3.8.2\lib\maven-embedder-3.8.2.jar started by ADMIN in D:\workspace_practice\store-inventory)
+[INFO] The following profiles are active: dev
+[INFO] Post-processing PropertySource instances
+[INFO] Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+[INFO] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[INFO] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application-dev.yml]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application.properties]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Started MavenCli in 0.837 seconds (JVM running for 2.581)
+[INFO] Active Profiles: dev
+[INFO] Encrypting value root
+[INFO] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+[INFO] Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+[INFO] Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+[INFO] Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+[INFO] Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+[INFO] Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+[INFO] Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+[INFO] Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+[INFO] Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+[INFO]
+ENC(B7AGdzID+d3Mu3ZejZxXdiIGX8fTgjoE/6S3wdH4bkYEFMPv+2XWtlz7F3WgDwNA)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.010 s
+[INFO] Finished at: 2022-02-09T00:28:29+05:30
+[INFO] ------------------------------------------------------------------------
+
+D:\workspace_practice\store-inventory>
+
+
+
+
+
+
+____________________________________________________________________________________________________________
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.19042.1466]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\workspace_practice\store-inventory>mvn jasypt:encrypt-value -Djasypt.encryptor.password=sambit007 -Djasypt.plugin.value=Test@123
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/ulisesbocchio/jasypt-maven-plugin/3.0.4/jasypt-maven-plugin-3.0.4.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/github/ulisesbocchio/jasypt-maven-plugin/3.0.4/jasypt-maven-plugin-3.0.4.pom (3.2 kB at 2.2 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/ulisesbocchio/jasypt-maven-plugin/3.0.4/jasypt-maven-plugin-3.0.4.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/github/ulisesbocchio/jasypt-maven-plugin/3.0.4/jasypt-maven-plugin-3.0.4.jar (33 kB at 52 kB/s)
+[INFO]
+[INFO] ----------------------< com.demo:store-inventory >----------------------
+[INFO] Building store-inventory 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- jasypt-maven-plugin:3.0.4:encrypt-value (default-cli) @ store-inventory ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar (169 kB at 209 kB/s)
+[INFO] Starting MavenCli v3.8.2 using Java 1.8.0_161 on DESKTOP-VFNKBIF with PID 21692 (D:\apache-maven-3.8.2-bin\apache-maven-3.8.2\lib\maven-embedder-3.8.2.jar started by ADMIN in D:\workspace_practice\store-inventory)
+[INFO] The following profiles are active: dev
+[INFO] Post-processing PropertySource instances
+[INFO] Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+[INFO] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[INFO] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application-dev.yml]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application.properties]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Started MavenCli in 1.519 seconds (JVM running for 9.651)
+[INFO] Active Profiles: dev
+[INFO] Encrypting value Test@123
+[INFO] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+[INFO] Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+[INFO] Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+[INFO] Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+[INFO] Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+[INFO] Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+[INFO] Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+[INFO] Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+[INFO] Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+[INFO]
+ENC(qLY/0smzfs0J3GDWfjlQE+AThW80RSg62HVfzwZbALqwGFQS5HQTOC6gmUac2h6U)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.514 s
+[INFO] Finished at: 2022-02-08T23:49:57+05:30
+[INFO] ------------------------------------------------------------------------
+
+D:\workspace_practice\store-inventory>mvn jasypt:decrypt-value -Djasypt.encryptor.password=sambit007 -Djasypt.plugin.value=qLY/0smzfs0J3GDWfjlQE+AThW80RSg62HVfzwZbALqwGFQS5HQTOC6gmUac2h6U
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.demo:store-inventory >----------------------
+[INFO] Building store-inventory 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- jasypt-maven-plugin:3.0.4:decrypt-value (default-cli) @ store-inventory ---
+[INFO] Starting MavenCli v3.8.2 using Java 1.8.0_161 on DESKTOP-VFNKBIF with PID 24544 (D:\apache-maven-3.8.2-bin\apache-maven-3.8.2\lib\maven-embedder-3.8.2.jar started by ADMIN in D:\workspace_practice\store-inventory)
+[INFO] The following profiles are active: dev
+[INFO] Post-processing PropertySource instances
+[INFO] Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+[INFO] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[INFO] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application-dev.yml]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource Config resource 'file [src\main\resources\application.properties]' via location 'file:./src/main/resources/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Started MavenCli in 0.817 seconds (JVM running for 2.506)
+[INFO] Active Profiles: dev
+[INFO] Decrypting value qLY/0smzfs0J3GDWfjlQE+AThW80RSg62HVfzwZbALqwGFQS5HQTOC6gmUac2h6U
+[INFO] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+[INFO] Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+[INFO] Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+[INFO] Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+[INFO] Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+[INFO] Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+[INFO] Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+[INFO] Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+[INFO] Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+[INFO]
+Test@123
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.815 s
+[INFO] Finished at: 2022-02-08T23:51:00+05:30
+[INFO] ------------------------------------------------------------------------
+
+D:\workspace_practice\store-inventory>
